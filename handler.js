@@ -6,7 +6,7 @@ const s3 = new AWS.S3();
 const parser = require('lambda-multipart-parser');
 
 const imageBucketName = 'sc2021b3-demoapp-0393';
-const userinfoUrl = 'https://dev-y4frv855.us.auth0.com/';
+const userinfoUrl = 'https://dev-y4frv855.us.auth0.com/userinfo';
 
 // Auth0のuserinfoエンドポイントからユーザ情報を取得
 const getUserinfo = async (event) => {
